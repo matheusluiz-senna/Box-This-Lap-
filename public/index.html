@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box This Lap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🏁 Box This Lap</h1>
+    <p>Digite um ano, veja o campeão e salve suas temporadas favoritas</p>
+  </header>
+
+  <main>
+    <div class="busca">
+      <input type="number" id="inputAno" placeholder="Digite o ano da corrida..." min="1950" max="2026">
+      <button id="btnBuscar">Buscar</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+      <p class="dica">Digite um ano (a partir de 1950) e clique em Buscar.</p>
+    </div>
+
+    <section class="favoritos">
+      <h3>⭐ Meus favoritos</h3>
+      <div id="listaFavoritos">
+        <p class="dica">Carregando favoritos...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Box This Lap · Dados fornecidos pela <a href="https://github.com/jolpica/jolpica-f1" target="_blank">Jolpica-F1
+        API</a></p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
